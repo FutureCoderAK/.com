@@ -1,53 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Image Slider</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <div class="slider">
-        <div class="slide-items">
-            <div class="item active">
-                <div class="img" style="background-image: url('image/slide-1.jpg');">
+    <section class="">
+        <!--image slider start-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="image/slide-1.jpg" alt="">
                 </div>
-            </div>
-
-            <div class="item">
-                <div class="img" style="background-image: url('image/slide-2.jpg');">
+                <div class="slide">
+                    <img src="image/slide-2.jpg" alt="">
                 </div>
+                <div class="slide">
+                    <img src="image/slide-1.jpg" alt="">
+                </div>
+                <!--slide images end-->
             </div>
 
         </div>
+        <!--image slider end-->
+    </section>
 
-        <!-- Slider Controls -->
-        <div class="controls">
-            <div class="prev">
-                < </div>
-                    <div class="next">></div>
-            </div>
-            <!-- Slider Controls End-->
-
-            <!-- Slide info -->
-            <div class="slide-info">
-                <div class="meter">
-                    <div class="inner"></div>
-                </div>
-                <div class="number">
-                </div>
-            </div>
-            <!-- Slide info end-->
-
-            <!-- next slide progress meter -->
-            <div class="progress">
-            </div>
-            <!-- next slide progress meter end -->
-
-        </div>
-        <script src="main.js"></script>
 </body>
 
 </html>
