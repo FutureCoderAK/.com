@@ -1,15 +1,20 @@
-body {
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
 
-    background-color: black;
-    margin: auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amiri', serif;
 }
 
-section {
-    mwidth: 750px;
-    background-color: aqua;
+section.all {
+    max-width: 550px;
     margin: auto;
-    height: 100vh;
     padding: 10px;
+    border: wheat 2px solid;
+    position: relative;
+    background: #252d37;
+
 }
 
 .slider {
@@ -86,16 +91,169 @@ section {
     margin-right: 40px;
 }
 
-@media(max-width: 554px) {
-    .slider {
-        height: 250px;
-    }
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px;
+    max-width: 100%;
+    overflow-x: scroll;
+    gap: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.products {
+    width: 100%;
+    /* border: wheat 1px solid; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 5px 11px 1px rgb(0 0 0 / 27%) !important;
+    background: #252d37;
+    border-radius: 15px;
+    height: auto;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 25px;
+    box-shadow: 0 5px 11px 1px rgb(0 0 0 / 27%) !important;
+    background: #252d37;
+    color: aliceblue;
+}
+
+.name_details p {
+    color: #D9DFC6;
+    font-family: 'Thabit', serif;
+}
+
+.product img {
+    width: 100px;
+    height: 75px;
+    border-radius: 20px;
+}
+
+.title_menu h1 {
+    color: #FF9D23;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.price {
+    color: #dd9e54;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+li {
+    min-width: fit-content;
+    padding: 5px 12px;
+    color: #020202;
+    background: #E1EACD;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+li a {
+    color: #020202;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.social {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+i {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #f10e3f;
+    cursor: pointer;
 
 }
 
-@media(max-width: 320px) {
-    .slider {
-        height: 230px;
-    }
+.fixed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    z-index: 1000;
+    width: calc(100% - 20px);
+    max-width: 550px;
+    margin: auto;
+}
 
+.social-icon.phone {
+    color: #4CAF50;
+}
+
+.social-icon {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.fixed a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info {
+    width: 100%;
+}
+
+.img-product {
+    width: 150px;
+    display: flex;
+    align-items: center;
 }
