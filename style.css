@@ -1,25 +1,20 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    width: 768px;
-    height: 100vh;
-    margin: auto;
+
     background-color: black;
+    margin: auto;
 }
 
 section {
-    background-color: azure;
+    max-width: 750px;
+    background-color: aqua;
+    margin: auto;
     height: 100vh;
     padding: 10px;
 }
 
 .slider {
     width: 100%;
-    height: 400px;
+    height: 350px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -89,4 +84,18 @@ section {
 
 .navigation-auto div:not(:last-child) {
     margin-right: 40px;
+}
+
+@media(max-width: 554px) {
+    .slider {
+        height: 250px;
+    }
+
+}
+
+@media(max-width: 320px) {
+    .slider {
+        height: 230px;
+    }
+
 }
