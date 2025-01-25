@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons/css/fontello.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Menu</title>
 </head>
 
@@ -13,40 +15,281 @@
     <section class="all">
         <section class="img_slider">
             <!--image slider start-->
-            <div class="slider">
-                <div class="slides">
+            <article class="slider">
+                <article class="slides">
                     <!--radio buttons start-->
                     <input type="radio" name="radio-btn" id="radio1">
                     <input type="radio" name="radio-btn" id="radio2">
                     <input type="radio" name="radio-btn" id="radio3">
                     <!--radio buttons end-->
                     <!--slide images start-->
-                    <div class="slide first">
-                        <img src="images/slide-1.jpg" alt="">
-                    </div>
-                    <div class="slide">
+                    <article class="slide first">
+                        <img src="images/download.jpeg" alt="">
+                    </article>
+                    <article class="slide">
                         <img src="images/slide-2.jpg" alt="">
-                    </div>
-                    <div class="slide">
+                    </article>
+                    <article class="slide">
                         <img src="images/slide-1.jpg" alt="">
-                    </div>
+                    </article>
                     <!--slide images end-->
+                </article>
+
+            </article>
+            <!--image slider end-->
+        </section>
+        <article class="icon-heart-and-profile-and-discription-and-language">
+            <i class="icon-heart"></i>
+
+            <button class="language">
+                اللغه
+            </button>
+
+        </article>
+        <article class="profile-and-discription">
+            <img class="profile-img profile-pic" src="i6k02MNNX0tuzKkX1IS5sQh8HRXbOsDqfmiljTkr.png"
+                onclick="openModal()">
+            <h1>
+                كافيه
+            </h1>
+            <div class="modal" id="profileModal">
+                <i class="close icon-cancel-3" onclick="closeModal()"></i>
+                <img class="modal-content" id="modalImage">
+            </div>
+            <article class="socialmedia">
+                <i class="icon-whatsapp"></i>
+                <i class="icon-facebook-1"></i>
+                <i class="icon-instagram"></i>
+                <i class="icon-location-6"></i>
+            </article>
+        </article>
+
+
+        <nav class="menu-container" id="stickyMenu">
+            <ul dir="rtl">
+                <li>
+                    <a href="#"> <img class="category-item" src="images/download.jpeg" alt="">
+                        <span>شوكولاته</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> <img class="category-item" src="images/download.jpeg" alt="">
+                        <span>شوكولاته</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> <img class="category-item" src="images/download.jpeg" alt="">
+                        <span>شوكولاته</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> <img class="category-item" src="images/download.jpeg" alt="">
+                        <span>شوكولاته</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> <img class="category-item" src="images/download.jpeg" alt="">
+                        <span>شوكولاته</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> <img class="category-item" src="images/download.jpeg" alt="">
+                        <span>شوكولاته</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> <img class="category-item" src="images/download.jpeg" alt="">
+                        <span>شوكولاته</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> <img class="category-item" src="images/download.jpeg" alt="">
+                        <span>شوكولاته</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> <img class="category-item" src="images/download.jpeg" alt="">
+                        <span>شوكولاته</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1>
+            تحب أي؟
+        </h1>
+        <div class="accordion">
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <article class="img-main-product">
+
+                        <img src="images/download.jpeg" alt="" srcset="">
+                        <span>الإسبريسو</span>
+                    </article>
+
+                    <i class="icon fas fa-chevron-down"></i>
+                </div>
+                <div class="product-content">
+                    <article class="product" dir="rtl">
+                        <article class="img-product">
+                            <img src="i6k02MNNX0tuzKkX1IS5sQh8HRXbOsDqfmiljTkr.png" alt="" srcset="">
+                        </article>
+                        <article class="info">
+                            <article class="name_details">
+                                <h3>شوربه جمبري</h3>
+                                <p>شوربه صوص احمر بها جمبري فقط</p>
+                                <br>
+                            </article>
+                            <article class="price" dir="ltr">
+                                <bold> 10 ج.م</bold>
+                            </article>
+                        </article>
+                    </article>
+
+                    <article class="product" dir="rtl">
+                        <article class="img-product">
+                            <img src="i6k02MNNX0tuzKkX1IS5sQh8HRXbOsDqfmiljTkr.png" alt="" srcset="">
+                        </article>
+                        <article class="info">
+                            <article class="name_details">
+                                <h3>شوربه جمبري</h3>
+                                <p>شوربه صوص احمر بها جمبري فقط</p>
+                                <br>
+                            </article>
+                            <article class="price" dir="ltr">
+                                <bold> 10 ج.م</bold>
+                            </article>
+                        </article>
+                    </article>
+                </div>
+
+
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <article class="img-main-product">
+
+                        <img src="images/download.jpeg" alt="" srcset="">
+                        <span>الإسبريسو</span>
+                    </article>
+
+                    <i class="icon fas fa-chevron-down"></i>
+                </div>
+                <div class="product-content">
+                    <article class="product" dir="rtl">
+                        <article class="img-product">
+                            <img src="i6k02MNNX0tuzKkX1IS5sQh8HRXbOsDqfmiljTkr.png" alt="" srcset="">
+                        </article>
+                        <article class="info">
+                            <article class="name_details">
+                                <h3>شوربه جمبري</h3>
+                                <p>شوربه صوص احمر بها جمبري فقط</p>
+                                <br>
+                            </article>
+                            <article class="price" dir="ltr">
+                                <bold> 10 ج.م</bold>
+                            </article>
+                        </article>
+                    </article>
+                    <article class="product" dir="rtl">
+                        <article class="img-product">
+                            <img src="i6k02MNNX0tuzKkX1IS5sQh8HRXbOsDqfmiljTkr.png" alt="" srcset="">
+                        </article>
+                        <article class="info">
+                            <article class="name_details">
+                                <h3>شوربه جمبري</h3>
+                                <p>شوربه صوص احمر بها جمبري فقط</p>
+                                <br>
+                            </article>
+                            <article class="price" dir="ltr">
+                                <bold> 10 ج.م</bold>
+                            </article>
+                        </article>
+                    </article>
                 </div>
 
             </div>
-            <!--image slider end-->
-        </section>
-        <nav>
-            <ul dir="rtl">
-                <li><a href="#">العروض</a></li>
-                <li><a href="#">الشوربه</a></li>
-                <li><a href="#">الوجبات</a></li>
-                <li><a href="#">طواجن</a></li>
-                <li><a href="#">اسماك</a></li>
-                <li><a href="#">سندوتشات</a></li>
-                <li><a href="#">سلطات</a></li>
-            </ul>
-        </nav>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <article class="img-main-product">
+
+                        <img src="images/download.jpeg" alt="" srcset="">
+                        <span>الإسبريسو</span>
+                    </article>
+
+                    <i class="icon fas fa-chevron-down"></i>
+                </div>
+                <div class="product-content">
+                    <article class="product" dir="rtl">
+                        <article class="img-product">
+                            <img src="i6k02MNNX0tuzKkX1IS5sQh8HRXbOsDqfmiljTkr.png" alt="" srcset="">
+                        </article>
+                        <article class="info">
+                            <article class="name_details">
+                                <h3>شوربه جمبري</h3>
+                                <p>شوربه صوص احمر بها جمبري فقط</p>
+                                <br>
+                            </article>
+                            <article class="price" dir="ltr">
+                                <bold> 10 ج.م</bold>
+                            </article>
+                        </article>
+                    </article>
+
+                    <article class="product" dir="rtl">
+                        <article class="img-product">
+                            <img src="i6k02MNNX0tuzKkX1IS5sQh8HRXbOsDqfmiljTkr.png" alt="" srcset="">
+                        </article>
+                        <article class="info">
+                            <article class="name_details">
+                                <h3>شوربه جمبري</h3>
+                                <p>شوربه صوص احمر بها جمبري فقط</p>
+                                <br>
+                            </article>
+                            <article class="price" dir="ltr">
+                                <bold> 10 ج.م</bold>
+                            </article>
+                        </article>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 
+
+
         <section class="products">
             <article class="title_menu" dir="rtl">
                 <h1>الشوربه</h1>
@@ -231,11 +474,11 @@
 
 
                 <a href="tel:+yourphonenumber" class="social-icon phone">
-                    <i class="fas fa-phone-alt"></i> <!-- أيقونة الهاتف -->
-                </a>
-            </article>
-            <h3>إحدى خدمات شركة <a href="#">سينتاك كود </a> للخدمات البرمجيه</h3>
-        </footer>
+                    <i class="fas fa-phone-alt"></i> أيقونة الهاتف -->
+        <!-- </a>
+        </article>
+        <h3>إحدى خدمات شركة <a href="#">سينتاك كود </a> للخدمات البرمجيه</h3>
+        </footer>  -->
 
 
     </section>
