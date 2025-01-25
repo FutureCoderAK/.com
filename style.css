@@ -6,13 +6,14 @@
     box-sizing: border-box;
     font-family: 'Amiri', serif;
 }
-
+body {
+ height: 100vh;
+}
 section.all {
     max-width: 768px;
     margin: auto;
     position: relative;
     background: #014784;
- height: 100vh;
 }
 
 .slider {
