@@ -12,7 +12,7 @@ section.all {
     margin: auto;
     position: relative;
     background: #014784;
-
+ height: 100vh;
 }
 
 .slider {
